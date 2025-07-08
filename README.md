@@ -53,7 +53,7 @@ $$
 \mu = a \cdot x_{\text{scaled}}^2 + b \cdot x_{\text{scaled}} + c
 $$
 
-With true parameters:
+With scaled parameters:
 
 - $a = -200$
 - $b = 200$
