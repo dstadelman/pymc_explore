@@ -6,7 +6,7 @@ This guidebook provides a comprehensive resource for applying Bayesian inference
 
 ## Chapter 1: Introduction to the Experiment
 
-The `pymc_explore.py` script conducts a Bayesian inference experiment to model a quadratic function $$ y = -0.02x^2 + 2x + 50 $$ across four datasets with varying levels of noise and randomness. The datasets, each with 4,096 samples, are:
+The `pymc_explore.py` script conducts a Bayesian inference experiment to model a quadratic function $ y = -0.02x^2 + 2x + 50 $ across four datasets with varying levels of noise and randomness. The datasets, each with 4,096 samples, are:
 
 1. **Exact Dataset**: Generated directly from the quadratic function with no noise.
 2. **Noisy Dataset**: The quadratic function with Gaussian noise ($\sigma = 10$).
