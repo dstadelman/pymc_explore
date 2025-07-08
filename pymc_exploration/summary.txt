@@ -1,0 +1,74 @@
+Bayesian Inference Analysis Summary
+Dataset Size: 4096 samples
+Sampling: 4 chains, 1000 tune, 1000 draws per chain (4000 draws total)
+
+Analyzing Exact...
+Posterior Mean Parameters:
+  a: -200.0000 (True: -200.0000)
+  b: 200.0000 (True: 200.0000)
+  c: 50.0000 (True: 50.0000)
+  sigma: 0.0000
+Metrics:
+  MAE: 0.0000
+  RMSE: 0.0000
+  R-squared: 1.0000
+  LOO: 71180.2136
+Convergence Diagnostics:
+  Max R-hat: 3.4279 (should be < 1.01 for convergence)
+  Min ESS: 4 (should be > 100 for reliability)
+
+
+Analyzing Noisy...
+Posterior Mean Parameters:
+  a: -197.9402 (True: -200.0000)
+  b: 197.7663 (True: 200.0000)
+  c: 50.1345 (True: 50.0000)
+  sigma: 10.1726
+Metrics:
+  MAE: 8.0884
+  RMSE: 10.1626
+  R-squared: 0.6790
+  LOO: -15313.3793
+Convergence Diagnostics:
+  Max R-hat: 1.0051 (should be < 1.01 for convergence)
+  Min ESS: 988 (should be > 100 for reliability)
+
+
+Analyzing Random...
+Posterior Mean Parameters:
+  a: -97.5295 (True: -200.0000)
+  b: 99.8131 (True: 200.0000)
+  c: 82.4669 (True: 50.0000)
+  sigma: 58.1554
+Metrics:
+  MAE: 50.3227
+  RMSE: 58.1897
+  R-squared: -0.0114
+  LOO: -22460.1280
+Convergence Diagnostics:
+  Max R-hat: 1.0039 (should be < 1.01 for convergence)
+  Min ESS: 991 (should be > 100 for reliability)
+
+
+Analyzing Half_Half...
+Posterior Mean Parameters:
+  a: -136.7261 (True: -200.0000)
+  b: 137.4547 (True: 200.0000)
+  c: 68.6281 (True: 50.0000)
+  sigma: 43.3165
+Metrics:
+  MAE: 31.4735
+  RMSE: 43.3295
+  R-squared: 0.0315
+  LOO: -21252.8451
+Convergence Diagnostics:
+  Max R-hat: 1.0041 (should be < 1.01 for convergence)
+  Min ESS: 1189 (should be > 100 for reliability)
+
+
+Summary of Metrics Across Datasets:
+                    mae          rmse        r2           loo
+Exact      2.298051e-11  3.064317e-11  1.000000  71180.213627
+Noisy      8.088380e+00  1.016259e+01  0.678951 -15313.379333
+Random     5.032269e+01  5.818968e+01 -0.011392 -22460.128012
+Half_Half  3.147347e+01  4.332949e+01  0.031517 -21252.845065
