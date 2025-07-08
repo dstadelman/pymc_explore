@@ -91,7 +91,7 @@ To build the model correctly:
 
 The Bayesian model in the script consists of:
 
-1. **Priors**: Distributions over parameters ($a$, $b$, $c$, $\sigma$) reflecting prior beliefs. Broad priors (e.g., $\sigma_a = 20$) allow flexibility, while centered priors (e.g., $y \sim \text{Normal}(\200, \20)$) incorporate knowledge of the true function.
+1. **Priors**: Distributions over parameters ($a$, $b$, $c$, $\sigma$) reflecting prior beliefs. Broad priors (e.g., $\sigma_a = 20$) allow flexibility, while centered priors (e.g. $a \sim \text{Normal}(-200, 20)$) incorporate knowledge of the true function.
 2. **Likelihood**: A Normal distribution $y \sim \text{Normal}(\mu, \sigma)$, where $\mu = a \cdot x_{\text{scaled}}^2 + b \cdot x_{\text{scaled}} + c$, models the observed data.
 3. **Posterior**: Computed via NUTS sampling, combining priors and likelihood to estimate parameter distributions.
 
